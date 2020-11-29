@@ -9,6 +9,7 @@ const mongoose = require("mongoose");
 var mongodb = require("mongodb");
 const { json } = require("body-parser");
 var ObjectId = mongodb.ObjectId;
+const users = require('../routes/users');
 
 // Users list
 router.post("/", function (req, res) {
