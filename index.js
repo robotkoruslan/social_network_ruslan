@@ -7,8 +7,7 @@ const users = require("./routes/users");
 const config = require("./config/db");
 const app = express();
 const cookieSession = require("cookie-session")
-
-const port = 3001;
+const port = 3002;
 
 
 app.use(cookieSession({
