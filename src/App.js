@@ -3,7 +3,7 @@ import React from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-
+import PrivateRoute from './PrivateRoute';
 
 
 import Login from "./components/login.component";
@@ -26,9 +26,12 @@ function App() {
   const isAuthenticated = () => {
     let hasToken = localStorage.getItem("accessToken");
     if (hasToken) return true;
-    return false;
+   
 };
  
+const auth = isAuthenticated()
+
+
 return (
   <Router>
     <div className="container">
@@ -63,9 +66,9 @@ return (
         <div className="auth-inner">
           <Switch>
             <Route exact path="/" component={Login} />
-            <Route path='/users' component={Users} />
+            <PrivateRoute auth={!auth} path='/users' component={Users} />
             <Route path="/sign-up" component={SignUp} />
-            <Route path="/dashboard" component={Dashboard} />
+            <PrivateRoute auth={!auth} path="/dashboard" component={Dashboard} />
           </Switch>
         </div>
       </div>
