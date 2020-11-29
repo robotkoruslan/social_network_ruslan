@@ -1,0 +1,72 @@
+{
+  "contacts": [
+    {
+      "first_name": "Ruslan",
+      "last_name": "Robotko",
+      "email": "robotko@gmail.com",
+      "password": "123",
+      "password_confirm": "123",
+      "id": 5
+    },
+    {
+      "first_name": "Roma",
+      "last_name": "Rob",
+      "email": "rroma@asdd.com",
+      "password": "333",
+      "password_confirm": "333",
+      "id": 6
+    },
+    {
+      "first_name": "222",
+      "last_name": "222",
+      "email": "222",
+      "password": "222",
+      "password_confirm": "",
+      "id": 7
+    },
+    {
+      "first_name": "333",
+      "last_name": "333",
+      "email": "333@33.ru",
+      "password": "333",
+      "password_confirm": "333",
+      "id": 8
+    },
+    {
+      "first_name": "111111",
+      "last_name": "111111",
+      "email": "1111111@sd.df",
+      "password": "11111111",
+      "password_confirm": "22222222222",
+      "id": 9
+    },
+    {
+      "first_name": "111111",
+      "last_name": "111111",
+      "email": "1111111@sd.df",
+      "password": "11111111",
+      "password_confirm": "22222222222",
+      "id": 10
+    },
+    {
+      "first_name": "11111111",
+      "last_name": "1121111",
+      "email": "2222@222.sa",
+      "password": "21212",
+      "password_confirm": "2121",
+      "id": 11
+    },
+    {
+      "first_name": "1@1.ua",
+      "email": "1@1.ua",
+      "password": "1",
+      "id": 12
+    },
+    {
+      "first_name": "1@1.ua",
+      "email": "1@1.ua",
+      "password": "1",
+      "id": 13
+    }
+  ]
+}
