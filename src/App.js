@@ -31,7 +31,7 @@ function App() {
  
 return (
   <Router>
-    <div className="App">
+    <div className="container">
       <nav className="navbar navbar-expand-lg navbar-light fixed-top">
         <div className="container">
           <Link className="navbar-brand" to={"/"}></Link>
