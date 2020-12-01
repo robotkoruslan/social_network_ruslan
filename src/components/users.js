@@ -245,7 +245,7 @@ export default class Users extends Component {
           </tr>
         );
       });
-      let friends = this.state.userFriend.map((friend) => {
+      let friends = this.state.userFriend.map ((friend) => {
         if (friend.status === "Accepted") {
           return (
             <tr key={friend._id}>

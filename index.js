@@ -10,6 +10,7 @@ const port = 3001;
 const User = require("./models/user");
 
 
+
 // Passport init
 app.use(passport.initialize());
 app.use(passport.session());
