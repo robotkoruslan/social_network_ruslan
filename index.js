@@ -7,7 +7,7 @@ const users = require("./routes/users");
 const config = require("./config/db");
 const app = express();
 const port = 3001;
-
+const User = require("./models/user");
 
 
 // Passport init
@@ -37,3 +37,9 @@ app.listen(port, () => {
 });
 
 app.use('/users', users);
+
+app.post("/dashboard", (req, res) => {
+  User.findOne({accessToken: req.body.accessToken})
+  .then((user) => res.json(user))
+  .catch((err) => console.log(err))
+})

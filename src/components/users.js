@@ -217,7 +217,7 @@ export default class Users extends Component {
           this.setState({
             isLoading: true,
           });
-        }, 1200)
+        }, 600)
       );
   }
 

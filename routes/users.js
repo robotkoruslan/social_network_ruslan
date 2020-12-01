@@ -67,6 +67,17 @@ router.post("/", function (req, res) {
 // });
 
 //Get user
+// router.get("/myProfile", function(req, res){
+//   const token = req.body.accessToken;
+//   User.findOne({
+//     accessToken: token,
+//   },function(user){
+//     if
+//   })
+// })
+
+
+
 router.post("/getUser", function (req, res) {
   const token = req.body.accessToken;
   User.findOne(

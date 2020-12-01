@@ -3,7 +3,9 @@ import React from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import PrivateRoute from './PrivateRoute';
+import PrivateRoute from './components/PrivateRoute';
+import NonFound from './components/NotFound';
+
 
 
 import Login from "./components/login.component";
@@ -69,6 +71,8 @@ return (
             <PrivateRoute auth={!auth} path='/users' component={Users} />
             <Route path="/sign-up" component={SignUp} />
             <PrivateRoute auth={!auth} path="/dashboard" component={Dashboard} />
+            <Route component={NonFound} />
+           
           </Switch>
         </div>
       </div>
